@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Globalization;
 
-namespace SemVer
+namespace semver.tools
 {
     public class SemanticVersionTypeConverter : TypeConverter
     {

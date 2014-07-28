@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace SemVer
+namespace semver.tools
 {
     /// <summary>
     /// Represents a Semantic Version, as described in http://semver.org/
