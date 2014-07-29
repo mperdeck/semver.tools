@@ -2,7 +2,7 @@
 using System.Text;
 using System;
 
-namespace SemVer
+namespace semver.tools
 {
     /// <summary>
     /// Represents a version specification, that is, a collection of one or more versions.

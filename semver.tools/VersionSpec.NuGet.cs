@@ -3,7 +3,7 @@ using System.Text;
 using System;
 using System.Linq;
 
-namespace SemVer
+namespace semver.tools
 {
     public partial class VersionSpec : IVersionSpec
     {

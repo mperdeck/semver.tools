@@ -1,5 +1,5 @@
 ﻿
-namespace SemVer
+namespace semver.tools
 {
     public interface IVersionSpec
     {
