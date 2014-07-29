@@ -6,6 +6,7 @@ namespace semver.tools
 {
     /// <summary>
     /// Represents a version specification, that is, a collection of one or more versions.
+    /// Contains methods to parse a string with a version spec, check whether a version is included in a version spec, etc.
     /// </summary>
     public partial class VersionSpec : IVersionSpec
     {
@@ -38,7 +39,7 @@ namespace semver.tools
         /// True if minVersion is included in the version spec.
         /// False if only versions higher (but not equal) to minVersion are in the version spec.
         /// </param>
-        /// <param name="maxVersion">Upper bound of the version spec</param>
+        /// <param name="maxVersion">Upper bound of the version spec.</param>
         /// <param name="isMaxInclusive">
         /// True if maxVersion is included in the version spec.
         /// False if only versions lower (but not equal) to maxVersion are in the version spec.
@@ -51,9 +52,26 @@ namespace semver.tools
             MaxVersion = maxVersion;
         }
 
+        /// <summary>
+        /// Lower bound of the version spec.
+        /// </summary>
         public SemanticVersion MinVersion { get; private set; }
+
+        /// <summary>
+        /// True if minVersion is included in the version spec.
+        /// False if only versions higher (but not equal) to minVersion are in the version spec.
+        /// </summary>
         public bool IsMinInclusive { get; private set; }
+
+        /// <summary>
+        /// Upper bound of the version spec.
+        /// </summary>
         public SemanticVersion MaxVersion { get; private set; }
+
+        /// <summary>
+        /// True if maxVersion is included in the version spec.
+        /// False if only versions lower (but not equal) to maxVersion are in the version spec.
+        /// </summary>
         public bool IsMaxInclusive { get; private set; }
 
         /// <summary>

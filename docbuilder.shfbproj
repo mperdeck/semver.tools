@@ -17,6 +17,32 @@
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <IndentHtml>True</IndentHtml>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <CleanIntermediates>True</CleanIntermediates>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="semver.tools\bin\Debug\semver.tools.dll" xmlns="" />
+      <DocumentationSource sourceFile="semver.tools\bin\Debug\semver.tools.xml" xmlns="" />
+    </DocumentationSources>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="False">Library to create and compare semantic versions (semvers) and semantic version ranges, to check if a semver is part of a range, etc. Also supports NuGet style versions and ranges.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="semver.tools" isDocumented="True">Library to create and compare semantic versions (semvers) and semantic version ranges, to check if a semver is part of a range, etc. Also supports NuGet style versions and ranges.</NamespaceSummaryItem>
+    </NamespaceSummaries>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <HelpTitle>Semantic Versions Tools</HelpTitle>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <MissingTags>Summary, AutoDocumentCtors, AutoDocumentDispose</MissingTags>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

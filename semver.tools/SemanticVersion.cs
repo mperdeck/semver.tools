@@ -84,6 +84,9 @@ namespace semver.tools
         /// Parses a string with a semantic version and returns the SemanticVersion.
         /// Exception if the string does not contain a valid semantic version.
         /// </summary>
+        /// <exception cref="ArgumentException">
+        /// Throws an exception if the string does not contain a valid semantic version, or if the input string is null.
+        /// </exception>
         public static SemanticVersion Parse(string s)
         {
             if (String.IsNullOrEmpty(s))
@@ -153,7 +156,9 @@ namespace semver.tools
         /// </summary>
         /// <param name="obj">
         /// Another SemanticVersion to compare against "this" SemanticVersion.
-        /// Exception if it is not a SemanticVersion.
+        /// <exception cref="ArgumentException">
+        /// Throws an exception if the input parameter is not a SemanticVersion.
+        /// </exception>
         /// </param>
         /// <returns>
         /// less than 0: This instance precedes obj in the sort order.
@@ -276,6 +281,11 @@ namespace semver.tools
             return (version1 == version2) || (version1 > version2);
         }
 
+        /// <summary>
+        /// Returns the string that was originally used to create this SemanticVersion.
+        /// If no string was used, returns a string representing this SemanticVersion.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return _originalString;

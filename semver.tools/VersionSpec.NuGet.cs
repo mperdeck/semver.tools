@@ -34,19 +34,10 @@ namespace semver.tools
         /// <summary>
         /// Parses a string with a version spec in NuGet format.
         /// See http://docs.nuget.org/docs/reference/versioning
-        /// 
-        /// Exception if the string does not contain a valid version spec in NuGet format.
-        /// 
-        /// The version string is either a simple version or an arithmetic range
-        /// e.g.
-        ///      1.0         --> 1.0 ≤ x
-        ///      (,1.0]      --> x ≤ 1.0
-        ///      (,1.0)      --> x &lt; 1.0
-        ///      [1.0]       --> x == 1.0
-        ///      (1.0,)      --> 1.0 &lt; x
-        ///      (1.0, 2.0)   --> 1.0 &lt; x &lt; 2.0
-        ///      [1.0, 2.0]   --> 1.0 ≤ x ≤ 2.0
         /// </summary>
+        /// <exception cref="ArgumentException">
+        /// Throws an exception if the string does not contain a valid version spec in NuGet format.
+        /// </exception>
         /// <param name="s">
         /// String to parse.
         /// </param>

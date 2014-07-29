@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("semver.tools")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Library to create and compare semantic versions (semvers) and semantic version ranges, to check if a semver is part of a range, etc. Also supports NuGet style versions and ranges.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Matt Perdeck")]
 [assembly: AssemblyProduct("semver.tools")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]

@@ -4,6 +4,9 @@ using System.Globalization;
 
 namespace semver.tools
 {
+    /// <summary>
+    /// TypeConverter used to convert strings to SemanticVersions.
+    /// </summary>
     public class SemanticVersionTypeConverter : TypeConverter
     {
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
