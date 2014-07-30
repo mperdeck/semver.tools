@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semver.tools", "semver.tools\semver.tools.csproj", "{A49B9AE7-E2FE-41D3-BA2D-17113FE2A8DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semver.tools.tests", "semver.tools.tests\semver.tools.tests.csproj", "{4FF323CF-40E6-4B59-AFA8-3148E5B928C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A49B9AE7-E2FE-41D3-BA2D-17113FE2A8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A49B9AE7-E2FE-41D3-BA2D-17113FE2A8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A49B9AE7-E2FE-41D3-BA2D-17113FE2A8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF323CF-40E6-4B59-AFA8-3148E5B928C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF323CF-40E6-4B59-AFA8-3148E5B928C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF323CF-40E6-4B59-AFA8-3148E5B928C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF323CF-40E6-4B59-AFA8-3148E5B928C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
