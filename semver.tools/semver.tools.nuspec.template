@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>semver.tools</id>
+    <version>__Version__</version>
+    <authors>mperdeck</authors>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/mperdeck/semver.tools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library to create and parse semantic versions and semantic version ranges, to check if a version is part of a range, etc. Also supports NuGet style versions and ranges.</description>
+    <language>en-US</language>
+    <tags>semver nuget dependencies semantic version</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+  </files>
+</package>
